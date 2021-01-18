@@ -1,0 +1,12 @@
+.bundle
+.vagrant
+.idea
+.settings
+.classpath
+.project
+*.iml
+*.exe
+*.png
+*.log
+
+Gemfile.lock

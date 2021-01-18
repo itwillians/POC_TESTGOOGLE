@@ -1,0 +1,14 @@
+image: 'nbulai/ruby-chromedriver:latest'
+  
+stages:
+  - test
+  
+run_scripts:
+  stage: test
+  script:
+    - ruby -v                                   # Print out ruby version for debugging
+    - bundle install
+    - rake spec
+  artifacts:
+    paths:
+      - reports/
